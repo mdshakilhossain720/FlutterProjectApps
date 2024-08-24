@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../constrant/color_resourse.dart';
+
 class TextStyles {
   //:::::::::::::::::::
   static TextStyle customText(
@@ -86,6 +88,25 @@ class TextStyles {
       fontSize: 22,
     );
   }
+
+  // start my style
+static TextStyle loginTextStyle(){
+    return TextStyle(
+      fontWeight:FontWeight.w600,
+      fontSize: 12,
+      color: ColorRes.white,
+    );
+}
+
+static TextStyle loginBtnStyle(){
+    return TextStyle(
+      fontSize: 13,
+      fontWeight: FontWeight.w600,
+      color: ColorRes.white,
+    );
+}
+
+
 
 //:::::::::::::::::::
 

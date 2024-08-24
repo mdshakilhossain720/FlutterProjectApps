@@ -36,9 +36,11 @@ class CustomTextField extends StatelessWidget {
           maxWidth: width,
         ),
         filled: true,
-        fillColor: ColorRes.white,
+        fillColor: ColorRes.darkTextFieldColor,
         hintText: hinText,
-        //hintStyle:urbanis ,
+        hintStyle: TextStyle(
+          color:ColorRes.formTextColor,
+        ),
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
         border: OutlineInputBorder(

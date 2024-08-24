@@ -53,9 +53,14 @@ class ColorRes{
   static const Color darkDialogBoxBgColor = Color(0xFF212741);
   static const Color darkDrawerBgColor = Color(0xFF212741);
   static const Color darkGreyColor = Color(0xFF2F375B);
+  static const Color darkTextFieldColor = Color(0xFF445069);
 
 
   static const Color black = Color(0xFF000000);
+
+  static const Color formTextColor = Color(0xFFFFFFFF);
+  static const Color loginForgetColor = Color(0xFF668BD8);
+
 
 
   static const Color white = Color(0xFFFFFFFF);

@@ -13,6 +13,8 @@ class Images {
   static const String finger = 'assets/icons/finger.png';
   static const String facial = 'assets/icons/facial.png';
 
+  static const String google='assets/icons/google.png';
+
 
   //* =========== |> OnBoarding Images <| ===========  */
   static const String onBoardTech = 'assets/images/splash/onboard_tech.png';
