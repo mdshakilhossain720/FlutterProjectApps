@@ -30,7 +30,7 @@ class CustomTextField extends StatelessWidget {
       obscureText: isobscureText!,
       obscuringCharacter: obscuringCharacter!,
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.only(top: 12),
+        contentPadding: EdgeInsets.only(top: 12,left: 10),
         constraints: BoxConstraints(
           maxHeight: height * 0.065,
           maxWidth: width,

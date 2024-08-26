@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:rbftestingproject/global/constrant/color_resourse.dart';
 
 import 'screen/auth/login_screen.dart';
+import 'screen/auth/splash_screen.dart';
 
 void main() {
   // Set the status bar color
@@ -18,9 +20,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: SplashScreen(),
       theme: ThemeData(
         scaffoldBackgroundColor: ColorRes.darkScaffoldBgColor ,
       ),

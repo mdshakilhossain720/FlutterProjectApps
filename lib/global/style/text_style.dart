@@ -103,9 +103,18 @@ static TextStyle loginBtnStyle(){
       fontSize: 13,
       fontWeight: FontWeight.w600,
       color: ColorRes.white,
+      
     );
 }
 
+
+static TextStyle loginwith(){
+    return TextStyle(
+      fontSize: 15,
+      fontWeight: FontWeight.w600,
+      color: ColorRes.white,
+    );
+}
 
 
 //:::::::::::::::::::

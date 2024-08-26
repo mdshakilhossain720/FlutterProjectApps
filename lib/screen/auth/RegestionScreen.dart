@@ -5,16 +5,14 @@ import 'package:rbftestingproject/global/constrant/images.dart';
 import 'package:rbftestingproject/global/method/size_box.dart';
 import 'package:rbftestingproject/global/style/text_style.dart';
 import 'package:rbftestingproject/global/widgets/button/custom_button.dart';
+import 'package:rbftestingproject/global/widgets/containerresuble.dart';
 import 'package:rbftestingproject/global/widgets/custom_textfield.dart';
+import 'package:rbftestingproject/global/widgets/dividerresuble.dart';
 
-import '../../global/widgets/containerresuble.dart';
-import '../../global/widgets/dividerresuble.dart';
-import 'RegestionScreen.dart';
-import 'forget_password_screen.dart';
+import 'reset_password.dart';
 
-
-class LoginScreen extends StatelessWidget {
-  LoginScreen({super.key});
+class Regestionscreen extends StatelessWidget {
+  Regestionscreen({super.key});
 
   final emailController = TextEditingController();
   final passController = TextEditingController();
@@ -58,22 +56,39 @@ class LoginScreen extends StatelessWidget {
                   hinText: 'Enter password',
                 ),
                 sizedBoxH(7),
-                Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton(
-                        onPressed: () {
-                          Get.to(ForgetPasswordScreen());
-                        },
-                        child: Text(
-                          "Forget Password ?",
-                          style: TextStyles.loginTextStyle().copyWith(
-                            color: ColorRes.loginForgetColor,
-                          ),
-                        ))),
+                Text(
+                  "Email or phone number",
+                  style: TextStyles.loginTextStyle(),
+                ),
+                sizedBoxH(7),
+                CustomTextField(
+                  controller: emailController,
+                  hinText: 'Enter email or phone number',
+                ),
+                sizedBoxH(7),
+                Text(
+                  "Email or phone number",
+                  style: TextStyles.loginTextStyle(),
+                ),
+                sizedBoxH(7),
+                CustomTextField(
+                  controller: emailController,
+                  hinText: 'Enter email or phone number',
+                ),
+                sizedBoxH(7),
+                Text(
+                  "Email or phone number",
+                  style: TextStyles.loginTextStyle(),
+                ),
+                sizedBoxH(7),
+                CustomTextField(
+                  controller: emailController,
+                  hinText: 'Enter email or phone number',
+                ),
                 sizedBoxH(20),
                 ElevatedButton(
                     onPressed: () {
-                     
+                      Get.to(ResetPassword());
                     },
                     style: buttonStyle,
                     child: Text("Login", style: TextStyles.loginBtnStyle())),
@@ -105,13 +120,11 @@ class LoginScreen extends StatelessWidget {
                       style: TextStyles.loginBtnStyle(),
                     ),
                     InkWell(
-                      onTap: () {
-                         Get.to(() =>Regestionscreen());
-                      },
+                      onTap: () {},
                       child: Text(
-                        " Sign up",
+                        " Sign in",
                         style: TextStyles.loginBtnStyle()
-                            .copyWith(color: ColorRes.blue,fontSize: 20),
+                            .copyWith(color: ColorRes.blue, fontSize: 20),
                       ),
                     ),
                     Text(
